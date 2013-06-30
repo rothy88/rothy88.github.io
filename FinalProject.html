@@ -2,8 +2,67 @@
 <html>
   <head>
   <style>
-    #map-canvas { width:800px; height:800px; }
+    #map-canvas { width:700px; height:600px; }
     .layer-wizard-search-label { font-family: sans-serif };
+    
+      .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+  .legend-scale ul {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+  .legend-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+    }
+   ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #999;
+    }
+  .legend-source {
+    font-size: 70%;
+    color: #999;
+    clear: both;
+    }
+   a {
+    color: #777;
+    }
+    
+    h1 {
+  font-weight: bold;
+  font-size: 46px;
+  margin-bottom: 10px;
+}
+
+body {
+  width: 800px;
+margin: 20px auto;
+font-family: georgia;
+}
+
+h2 {
+ text-align: center;
+  font-weight: normal;
+  font-size: 26px;
+  width: 527px;
+  margin: 4px auto 20px auto;
+ }
+    
     
   </style>
   <script type="text/javascript"
@@ -61,31 +120,39 @@
   </head>
   <body>
   
-  <h1 align=center >Filming in Manhattan</h1>
-  <img src="Action.png" style="float:right">
+  <h1 align=center style="font-family:Comic Sans MS;" >MOVIES IN MANHATTAN</h1>
 
-<h2 align=center>A Month-Long Look at Where Movies are Filmed in Manhattan's eclectic and diverse neighborhoods</h2>
+<h2 style="font-family:Comic Sans MS; margin-left: auto;
+    margin-right: auto;
+    width: 32em">A Month-Long Look at Where Movies are Filmed in Manhattan's eclectic and diverse neighborhoods</h2>
 
-    <div id="map-canvas"></div>
-    <div style="margin-top: 10px;">
-      <label class="layer-wizard-search-label">
-        Type
-        <input type="text" id="search-string"_0">
-        <input type="button" onclick="changeMap_0()" value="Search">
-      </label> 
-    </div>
+    <div id="map-canvas" style=" margin-left: auto;
+    margin-right: auto;
+    width: 46em"></div>
+  
     
-    <h5><i>How to Read The Map</i>-The different colors represent different kinds of movies:</h5>
+    <h5 style= "margin-left: auto;
+    margin-right: auto;
+    width: 46em" ><i>How to Read The Map</i>- The different colors represent different kinds of movies:</h5>
     
-      <ul>
-    <li>Green - Drama</li>
-    <li>Purple - Romance</li>
-    <li>Yellow - Comic</li>
-    <li>Blue - Comedy</li>
-    <li>Red - Action</li>
-    </ul>
+    <div class='my-legend' style= "margin-left: auto;
+    margin-right: auto;
+    width: 40em">
+<div class='legend-title'></div>
+<div class='legend-scale'>
+  <ul class='legend-labels'>
+    <li><span style='background:#00FF00;'></span><b>Drama</b></li>
+    <li><span style='background:#E066FF;'></span><b>Romance</b></li>
+    <li><span style='background:#F4FA58;'></span><b>Comic</b></li>
+    <li><span style='background:#2E2EFE;'></span><b>Comedy</b></li>
+    <li><span style='background:#FE2E2E;'></span><b>Action</b></li>
+  </ul>
+</div>
+<div class='legend-source'>Source: <a href="http://www.onlocationvacations.com">OLV.com</a></div>
+</div>
     
-    <h3>Show Me The Money! - The Average Income of the Area by Zip Code, Where a Specific Type of Movie was Filmed</h3>
+    
+    <h3>Show Me The Money! - The Average Income of the Area (by Zip Code) Where a Specific Type of Movie was Filmed</h3>
     
     <ul>
     <li>Romance - $66,417</li>
@@ -104,6 +171,10 @@
     <p>Surprisingly, only two different action films, 'Tracers' and 'Beware The Night' were shot in Manhattan over the past month. Looks like the tight Avenues and skyscrapers don't allow for explosions or epic battles.</p>
     
     <p><a href="http://www.onlocationvacations.com">Source - olv.com</a></p>
+    
+    <h3>Love Comics? - Head Downtown!</h3>
+    
+    <p>Downtown Manhattan, especially the Financial District, is a haven for Comic Movies. Both 'Teenage Mutant Ninja Turtles' and 'The Amazing Spider-Man 2' were filmed for weeks at a time near Wall Street, Water Street, Exchange Place and Lower East Side.</p>
     
   </body>
 </html>
